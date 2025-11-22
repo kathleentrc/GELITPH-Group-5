@@ -34,11 +34,10 @@ export default function RootLayout({
             <p className="text-2xl font-bold italic mb-4">P&P</p>
             <div className="flex flex-row gap-12 justify-center">
               <p>Home</p>
-              <p>About Us</p>
-              <p>Flash Fiction</p>
-              <p>Poetry</p>
-              <p>Essays</p>
-              <p>Reflections</p>
+              <p>Featured</p>
+              <p>Collection</p>
+              <p>Authors</p>
+              <p>About</p>
             </div>
           </div>
         </nav>
