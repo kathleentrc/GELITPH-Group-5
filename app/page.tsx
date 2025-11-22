@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -39,49 +40,23 @@ export default function Home() {
           {/* pieces*/}
           <div className="flex flex-row gap-5 px-36 relative flex-1 h-full overflow-hidden justify-between mb-32">
             {/* piece 1 */}
-            <div className="flex flex-col w-[550px]">
-              <Image
-                src="/edsa-rev.jpg"
-                alt="Protest Image"
-                width={550}
-                height={0}
-                className="object-cover"
-              />
-              <p className="text-sm font-albert font-regular tracking-tight text-white mt-6">Flash Fiction</p>
-              <p className="text-white font-nanum text-xl mt-1 tracking-tight">LOREM IPSUM DOLOR SIT</p>
-              <p className="text-white font-nanum text-base mt-2 tracking-tight">Dirt was my first hypothesis. It had its way of going where nothing else would go, and I kept seeing it, on surfaces, in corners, underneath furniture and long nails.</p>
-            </div>
+            <Link href="/works/cruz">
+              <div className="flex flex-col w-[400px] cursor-pointer hover:shadow-lg transition">
+                <Image
+                  src="/edsa-rev.jpg"
+                  alt="Protest Image"
+                  width={400}
+                  height={0}
+                  className="object-cover"
+                />
+                <p className="text-sm font-albert font-regular tracking-tight text-white mt-9">Flash Fiction</p>
+                <p className="text-white font-nanum text-xl mt-1 tracking-tight">LOREM IPSUM DOLOR SIT</p>
+                <p className="text-white font-nanum text-base mt-4 tracking-tight">Dirt was my first hypothesis. It had its way of going where nothing else would go, and I kept seeing it, on surfaces, in corners, underneath furniture and long nails.</p>
+              </div>
+            </Link>
 
-
-            {/* piece 2 */}
-            <div className="flex flex-col w-[550px]">
-              <Image
-                src="/edsa-rev.jpg"
-                alt="Protest Image"
-                width={550}
-                height={0}
-                className="object-cover"
-              />
-              <p className="text-sm font-albert font-regular tracking-tight text-white mt-6">Flash Fiction</p>
-              <p className="text-white font-nanum text-xl mt-1 tracking-tight">LOREM IPSUM DOLOR SIT</p>
-              <p className="text-white font-nanum text-base mt-2 tracking-tight">Dirt was my first hypothesis. It had its way of going where nothing else would go, and I kept seeing it, on surfaces, in corners, underneath furniture and long nails.</p>
-            </div>
-
-
-            {/* piece 3 */}
-            <div className="flex flex-col w-[550px]">
-              <Image
-                src="/edsa-rev.jpg"
-                alt="Protest Image"
-                width={600}
-                height={0}
-                className="object-cover"
-              />
-              <p className="text-sm font-albert font-regular tracking-tight text-white mt-6">Flash Fiction</p>
-              <p className="text-white font-nanum text-xl mt-1 tracking-tight">LOREM IPSUM DOLOR SIT</p>
-              <p className="text-white font-nanum text-base mt-2 tracking-tight">Dirt was my first hypothesis. It had its way of going where nothing else would go, and I kept seeing it, on surfaces, in corners, underneath furniture and long nails.</p>
-            </div>
-          </div>
+            
+          </div>          
         </div>
 
 
