@@ -43,6 +43,10 @@ export default function RootLayout({
         </nav>
 
         {children}
+
+        <footer>
+          {/* TODO: add footer here */}
+        </footer>
       </body>
     </html>
   );

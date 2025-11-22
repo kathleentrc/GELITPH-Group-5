@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <main className="px-10 border-gray-200">
+      <main className="px-10">
 
         {/* hero container */}
         <div className="flex flex-row items-center h-screen">
@@ -40,7 +40,7 @@ export default function Home() {
           {/* pieces*/}
           <div className="flex flex-row gap-5 px-36 relative flex-1 h-full overflow-hidden justify-between mb-32">
             {/* piece 1 */}
-            <Link href="/works/cruz">
+            <Link href="/works/kathleen">
               <div className="flex flex-col w-[400px] cursor-pointer hover:shadow-lg transition">
                 <Image
                   src="/edsa-rev.jpg"
@@ -49,19 +49,17 @@ export default function Home() {
                   height={0}
                   className="object-cover"
                 />
-                <p className="text-sm font-albert font-regular tracking-tight text-white mt-9">Flash Fiction</p>
+                <p className="text-sm font-albert font-bold tracking-tight text-white mt-9">POETRY</p>
                 <p className="text-white font-nanum text-xl mt-1 tracking-tight">LOREM IPSUM DOLOR SIT</p>
                 <p className="text-white font-nanum text-base mt-4 tracking-tight">Dirt was my first hypothesis. It had its way of going where nothing else would go, and I kept seeing it, on surfaces, in corners, underneath furniture and long nails.</p>
               </div>
             </Link>
-
-            
           </div>          
         </div>
 
 
         {/* collections */}
-        <div className="h-screen">
+        <div className="">
           <p>Collection</p>
           <p>Poetry</p>
           <p>Flash Fiction</p>
@@ -72,12 +70,20 @@ export default function Home() {
 
 
         {/* authors */}
-
+        <div>
+          <p>Gabriel Clarence Balboa</p>
+          <p>Castillo, Vincent Thaddeus Catalan</p>
+          <p>Cloma, Shania Francine Tagudinay</p>
+          <p>Gabriel Clarence Balboa</p>
+          <p>Cruz, Kathleen Therese Ramos</p>
+        </div>
 
 
 
         {/* about */}
-
+        <div>
+          <p>This magazine explores the theme of power and resistance in Philippine literature, reflecting how writers explore themes of societal struggles such as inequality, oppression, and social injustice. It examines the ways that depict the interactions between individuals and institutions where power and authority are exercised. In this context, power refers to the authority of individuals and institutions, including their ability to influence and dominate others. While resistance represents the efforts of others to challenge authority or to endure it to survive. Due to this, Philippine literature becomes a tool that allows writers and individuals to shed light on these struggles and give voice to those who resist and endure. Allowing the spread of awareness and inspiring and encouraging action and resilience in the face of injustice.</p>
+        </div>
 
         
       </main>
