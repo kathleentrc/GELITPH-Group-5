@@ -1,11 +1,51 @@
 @import "tailwindcss";
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    scroll-behavior: smooth;
+  }
+
   .font-nanum {
     font-family: var(--font-nanum);
   }
 
   .font-albert {
     font-family: var(--font-albert);
+  }
+}
+
+/* custom scrollbar styling */
+@layer base {
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #EFEFEF;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #244E81;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #990100;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #244E81 #EFEFEF;
+  }
+
+  *:hover {
+    scrollbar-color: #990100 #EFEFEF;
   }
 }

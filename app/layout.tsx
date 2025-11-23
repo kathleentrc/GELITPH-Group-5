@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Nanum_Myeongjo, Albert_Sans } from "next/font/google";
 import "./globals.css";
+import NavLink from "./components/NavLink";
 
 // Nanum Myeongjo (main font)
 const nanum = Nanum_Myeongjo({
@@ -33,19 +34,29 @@ export default function RootLayout({
           <div className="flex flex-col items-center py-6">
             <p className="text-2xl font-bold italic mb-4">P&P</p>
             <div className="flex flex-row gap-12 justify-center">
-              <p>Home</p>
-              <p>Featured</p>
-              <p>Collection</p>
-              <p>Authors</p>
-              <p>About</p>
+              <NavLink href="home">Home</NavLink>
+              <NavLink href="featured">Featured</NavLink>
+              <NavLink href="collection">Collection</NavLink>
+              <NavLink href="authors">Authors</NavLink>
+              <NavLink href="about">About</NavLink>
             </div>
           </div>
         </nav>
 
         {children}
 
-        <footer>
-          {/* TODO: add footer here */}
+        <footer className="bg-[#171717] text-[#EFEFEF] font-nanum">
+          <div className="flex flex-col items-center py-12 px-10">
+            <p className="text-2xl font-bold italic mb-6">P&P</p>
+            <div className="flex flex-row gap-12 justify-center mb-8">
+              <NavLink href="home">Home</NavLink>
+              <NavLink href="featured">Featured</NavLink>
+              <NavLink href="collection">Collection</NavLink>
+              <NavLink href="authors">Authors</NavLink>
+              <NavLink href="about">About</NavLink>
+            </div>
+            <p className="text-sm font-albert opacity-70">© {new Date().getFullYear()} Power in Poetry & Prose. All rights reserved.</p>
+          </div>
         </footer>
       </body>
     </html>
