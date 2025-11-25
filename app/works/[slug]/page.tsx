@@ -65,14 +65,14 @@ Curabitur ornare tempus quam sit amet tincidunt. Quisque volutpat nisl vitae mag
   return (
     <div className="min-h-screen bg-white">
       <main className="px-10 pt-32 pb-20">
-        <div className="max-w-4xl mx-auto">
-          {/* bck button */}
+        <div className="max-w-4xl mx-auto mt-10">
+          {/* bck button 
           <Link 
             href={`/collection/${article.category.toLowerCase().replace(' ', '-')}`}
             className="text-sm font-albert font-regular text-gray-600 hover:text-[#990100] transition mb-8 inline-block"
           >
             ← Back to {article.category}
-          </Link>
+          </Link>*/}
 
           {/* article header */}
           <div className="mb-8">
@@ -133,7 +133,7 @@ Curabitur ornare tempus quam sit amet tincidunt. Quisque volutpat nisl vitae mag
                 </span>
               </div>
               <div>
-                <h3 className="text-xl font-nanum font-bold tracking-tight mb-1 text-[#171717]">
+                <h3 className="text-xl font-nanum font-bold tracking-tight mb-1 text-[#171717] mt-1">
                   {article.author}
                 </h3>
                 <p className="text-sm font-nanum font-regular text-gray-600">

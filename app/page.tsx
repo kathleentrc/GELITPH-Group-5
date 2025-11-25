@@ -30,12 +30,12 @@ export default function Home() {
     },
     {
       name: "Shania Francine Tagudinay Cloma",
-      role: "Essayist",
+      role: "Essayist & Web Developer",
       bio: "Examining power dynamics in contemporary society."
     },
     {
       name: "Kathleen Therese Ramos Cruz",
-      role: "Poet & Storyteller",
+      role: "Poet & Web Developer",
       bio: "Giving voice to untold stories of resilience."
     },
     {
@@ -114,29 +114,77 @@ export default function Home() {
 
         {/* featured pieces container */}
         <section id="featured" className="flex flex-col bg-slate-950 h-full -mx-10">
-          <div className="px-36">
-            <p className="text-base font-albert font-bold tracking-tight text-white pt-20 mb-5">In Focus</p>
-            <p className="text-5xl font-nanum font-regular tracking-tight text-white pb-2">Featured Pieces</p>
-            <p className="text-lg font-nanum font-regular tracking-tight text-white pb-14 italic mb-5">Curated by our editorial team</p>
-          </div>
-          
           {/* pieces*/}
-          <div className="flex flex-row gap-5 px-36 relative flex-1 h-full overflow-hidden justify-between mb-32">
-            {/* piece 1 */}
-            <Link href="/works/kathleen">
-              <div className="flex flex-col w-[400px] cursor-pointer hover:shadow-lg transition">
-                <Image
-                  src="/edsa-rev.jpg"
-                  alt="Protest Image"
-                  width={400}
-                  height={0}
-                  className="object-cover"
-                />
-                <p className="text-sm font-albert font-bold tracking-tight text-white mt-9">POETRY</p>
-                <p className="text-white font-nanum text-xl mt-1 tracking-tight">LOREM IPSUM DOLOR SIT</p>
-                <p className="text-white font-nanum text-base mt-4 tracking-tight">Dirt was my first hypothesis. It had its way of going where nothing else would go, and I kept seeing it, on surfaces, in corners, underneath furniture and long nails.</p>
-              </div>
-            </Link>
+          <div className="flex flex-col px-36 mb-36">
+            
+            <div className="flex flex-col">
+              <p className="text-base font-albert font-bold tracking-tight text-white pt-20 mb-5 mt-8">In Focus</p>
+              <p className="text-5xl font-nanum font-regular tracking-tight text-white pb-2">Featured Pieces</p>
+              <p className="text-lg font-nanum font-regular tracking-tight text-white pb-14 italic mb-5">Curated by our editorial team</p>
+            </div>
+
+            <div className="flex flex-row items-center justify-center gap-10">
+              {/* piece 1 */}
+              <Link href="/works/kathleen">
+                <div className="flex flex-col max-w-[500px] flex-1 cursor-pointer hover:shadow-lg transition">
+                  <div className="w-full h-[260px] relative">
+                    <Image
+                      src="/edsa-rev.jpg"
+                      alt="Protest Image"
+                      fill
+                      className="object-cover rounded"
+                    />
+                  </div>
+
+                  <p className="text-sm font-albert font-bold tracking-tight text-white mt-9">POETRY</p>
+                  <p className="text-white font-nanum text-xl mt-1 tracking-tight">LOREM IPSUM DOLOR SIT</p>
+                  <p className="text-white font-nanum text-base mt-4 tracking-tight">
+                    Dirt was my first hypothesis. It had its way of going where nothing else would go...
+                  </p>
+                </div>
+              </Link>
+
+              {/* piece 2 */}
+              <Link href="/works/kathleen">
+                <div className="flex flex-col max-w-[500px] flex-1 cursor-pointer hover:shadow-lg transition">
+                  <div className="w-full h-[260px] relative">
+                    <Image
+                      src="/edsa-rev.jpg"
+                      alt="Protest Image"
+                      fill
+                      className="object-cover rounded"
+                    />
+                  </div>
+
+                  <p className="text-sm font-albert font-bold tracking-tight text-white mt-9">POETRY</p>
+                  <p className="text-white font-nanum text-xl mt-1 tracking-tight">LOREM IPSUM DOLOR SIT</p>
+                  <p className="text-white font-nanum text-base mt-4 tracking-tight">
+                    Dirt was my first hypothesis. It had its way of going where nothing else would go...
+                  </p>
+                </div>
+              </Link>
+
+
+              {/* piece 3 */}
+              <Link href="/works/kathleen">
+                <div className="flex flex-col max-w-[500px] flex-1 cursor-pointer hover:shadow-lg transition">
+                  <div className="w-full h-[260px] relative">
+                    <Image
+                      src="/edsa-rev.jpg"
+                      alt="Protest Image"
+                      fill
+                      className="object-cover rounded"
+                    />
+                  </div>
+
+                  <p className="text-sm font-albert font-bold tracking-tight text-white mt-9">POETRY</p>
+                  <p className="text-white font-nanum text-xl mt-1 tracking-tight">LOREM IPSUM DOLOR SIT</p>
+                  <p className="text-white font-nanum text-base mt-4 tracking-tight">
+                    Dirt was my first hypothesis. It had its way of going where nothing else would go...
+                  </p>
+                </div>
+              </Link>
+            </div>
           </div>          
         </section>
 
@@ -238,7 +286,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto">
             <div className="mb-12 px-10">
               <p className="text-base font-albert font-bold tracking-tight text-red-800 mb-3">Meet</p>
-              <p className="text-5xl font-nanum font-regular tracking-tight mb-3">Our Authors</p>
+              <p className="text-5xl font-nanum font-regular tracking-tight mb-3">Our Team</p>
               <p className="text-lg font-nanum font-regular tracking-tight text-gray-600 italic">The voices behind the words</p>
             </div>
             

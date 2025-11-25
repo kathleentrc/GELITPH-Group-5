@@ -85,13 +85,14 @@ export default function CategoryPage() {
     <div className="min-h-screen bg-white">
       <main className="px-10 pt-32 pb-20">
         {/* header */}
-        <div className="max-w-7xl mx-auto mb-12">
+        <div className="max-w-7xl mx-auto mb-12 mt-10">
+          {/* commented out back btn 
           <Link 
             href="/#collection"
             className="text-sm font-albert font-regular text-gray-600 hover:text-[#990100] transition mb-4 inline-block"
           >
             ← Back to Collection
-          </Link>
+          </Link>*/}
           <h1 className="text-5xl font-nanum font-bold tracking-tight mb-3">{categoryDisplay}</h1>
           <p className="text-lg font-nanum font-regular tracking-tight text-gray-600 italic">
             Explore our curated collection of {categoryDisplay.toLowerCase()} pieces
