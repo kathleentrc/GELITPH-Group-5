@@ -1,18 +1,18 @@
-'use client';
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   const scrollToCollection = () => {
-    const element = document.getElementById('collection');
+    const element = document.getElementById("collection");
     if (element) {
       const offset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     }
   };
@@ -21,67 +21,71 @@ export default function Home() {
     {
       name: "Gabriel Clarence Balboa",
       role: "Researcher and Essayist",
-      bio: ""
+      bio: "",
     },
     {
       name: "Vincent Thaddeus Catalan Castillo",
       role: "Editor and Essayist",
-      bio: ""
+      bio: "",
     },
     {
       name: "Shania Francine Tagudinay Cloma",
       role: "Essayist and Web Developer",
-      bio: ""
+      bio: "",
     },
     {
       name: "Kathleen Therese Ramos Cruz",
       role: "Poet and Web Developer",
-      bio: ""
+      bio: "",
     },
     {
       name: "Christophe Mervyn Lacustales Rodriguez",
       role: "Researcher and Essayist",
-      bio: ""
-    }
+      bio: "",
+    },
   ];
 
   const collectionItems = [
     {
       category: "Poetry",
       title: "Voices of Resistance",
-      description: "A collection of poems exploring themes of power, resistance, and social justice.",
+      description:
+        "A collection of poems exploring themes of power, resistance, and social justice.",
       count: 12,
       bgColor: "#F5E8E8",
       borderColor: "#990100",
-      textColor: "#171717"
+      textColor: "#171717",
     },
     {
       category: "Flash Fiction",
       title: "Brief Encounters",
-      description: "Short stories that capture moments of struggle and triumph in Philippine society.",
+      description:
+        "Short stories that capture moments of struggle and triumph in Philippine society.",
       count: 8,
       bgColor: "#E8EDF3",
       borderColor: "#244E81",
-      textColor: "#171717"
+      textColor: "#171717",
     },
     {
       category: "Essays",
       title: "Critical Perspectives",
-      description: "Thought-provoking essays examining power structures and social dynamics.",
+      description:
+        "Thought-provoking essays examining power structures and social dynamics.",
       count: 10,
       bgColor: "#F5F5F5",
       borderColor: "#171717",
-      textColor: "#171717"
+      textColor: "#171717",
     },
     {
       category: "Reflections",
       title: "Personal Narratives",
-      description: "Intimate reflections on personal experiences with power and resistance.",
+      description:
+        "Intimate reflections on personal experiences with power and resistance.",
       count: 6,
       bgColor: "#EFEFEF",
       borderColor: "#244E81",
-      textColor: "#171717"
-    }
+      textColor: "#171717",
+    },
   ];
 
   return (
@@ -90,18 +94,26 @@ export default function Home() {
         {/* hero container - Home Section */}
         <section id="home" className="flex flex-row items-center h-screen">
           <div className="w-1/2 flex flex-col items-center gap-2">
-            <p className="text-sm font-albert font-bold tracking-tight text-red-800 mb-2">Explore</p>
-            <p className="text-3xl font-nanum font-bold tracking-tight mb-3 px-24 text-center">POWER IN POETRY & PROSE</p>
-            <p className="text-lg font-nanum font-regular tracking-tight text-center px-24 mb-3">We create a space where these important narratives can be shared, deepen awareness of social issues, and encourage meaningful action. </p>
-            
-            <button 
+            <p className="text-sm font-albert font-bold tracking-tight text-red-800 mb-2">
+              Explore
+            </p>
+            <p className="text-3xl font-nanum font-bold tracking-tight mb-3 px-24 text-center">
+              POWER IN POETRY & PROSE
+            </p>
+            <p className="text-lg font-nanum font-regular tracking-tight text-center px-24 mb-3">
+              We create a space where these important narratives can be shared,
+              deepen awareness of social issues, and encourage meaningful
+              action.{" "}
+            </p>
+
+            <button
               onClick={scrollToCollection}
               className="text-sm font-albert font-regular text-white px-7 py-3 mt-7 bg-slate-900 hover:bg-slate-700 transition tracking-tight"
             >
               Start Reading
             </button>
           </div>
-          
+
           <div className="w-1/2 relative flex-1 h-full overflow-hidden">
             <Image
               src="/protest.png"
@@ -113,33 +125,45 @@ export default function Home() {
         </section>
 
         {/* featured pieces container */}
-        <section id="featured" className="flex flex-col bg-slate-950 h-full -mx-10">
+        <section
+          id="featured"
+          className="flex flex-col bg-slate-950 h-full -mx-10"
+        >
           {/* pieces*/}
           <div className="flex flex-col px-36 mb-36">
-            
             <div className="flex flex-col">
-              <p className="text-base font-albert font-bold tracking-tight text-white pt-20 mb-5 mt-8">In Focus</p>
-              <p className="text-5xl font-nanum font-regular tracking-tight text-white pb-2">Featured Pieces</p>
-              <p className="text-lg font-nanum font-regular tracking-tight text-white pb-14 italic mb-5">Curated by our editorial team</p>
+              <p className="text-base font-albert font-bold tracking-tight text-white pt-20 mb-5 mt-8">
+                In Focus
+              </p>
+              <p className="text-5xl font-nanum font-regular tracking-tight text-white pb-2">
+                Featured Pieces
+              </p>
+              <p className="text-lg font-nanum font-regular tracking-tight text-white pb-14 italic mb-5">
+                Curated by our editorial team
+              </p>
             </div>
 
             <div className="flex flex-row items-center justify-center gap-10">
               {/* piece 1 */}
-              <Link href="/works/research">
+              <Link href="/works/shania-1">
                 <div className="flex flex-col max-w-[500px] flex-1 cursor-pointer hover:shadow-lg transition">
                   <div className="w-full h-[260px] relative">
                     <Image
-                      src="/featured1.png"
+                      src="/growing-up.webp"
                       alt="Protest Image"
                       fill
                       className="object-cover grayscale contrast-125 brightness-90"
                     />
                   </div>
 
-                  <p className="text-sm font-albert font-bold tracking-tight text-white mt-9">ESSAY</p>
-                  <p className="text-white font-nanum text-xl mt-1 tracking-tight">HISTORY OF POWER IN THE PHILIPPINES</p>
+                  <p className="text-sm font-albert font-bold tracking-tight text-white mt-9">
+                    REFLECTION
+                  </p>
+                  <p className="text-white font-nanum text-xl mt-1 tracking-tight">
+                    GROWING UP FINDING MY VOICE
+                  </p>
                   <p className="text-white font-nanum text-base mt-4 tracking-tight">
-                    In the historical context, power has often been seen as authority figures,  from precolonial Datus to Presidents, in modern times.
+                    Power isn't something new to us. We grow up learning who holds it long before we ever learn what it...
                   </p>
                 </div>
               </Link>
@@ -156,15 +180,18 @@ export default function Home() {
                     />
                   </div>
 
-                  <p className="text-sm font-albert font-bold tracking-tight text-white mt-9">REFLECTION</p>
-                  <p className="text-white font-nanum text-xl mt-1 tracking-tight">INVISIBLE IN PLAIN SIGHT</p>
+                  <p className="text-sm font-albert font-bold tracking-tight text-white mt-9">
+                    REFLECTION
+                  </p>
+                  <p className="text-white font-nanum text-xl mt-1 tracking-tight">
+                    INVISIBLE IN PLAIN SIGHT
+                  </p>
                   <p className="text-white font-nanum text-base mt-4 tracking-tight">
-                    To me, it felt like being invincible. It was within a moment I anticipated being heard but was not...
-
+                    To me, it felt like being invincible. It was within a moment
+                    I anticipated being heard but was not...
                   </p>
                 </div>
               </Link>
-
 
               {/* piece 3 */}
               <Link href="/works/kathleen-1">
@@ -178,26 +205,37 @@ export default function Home() {
                     />
                   </div>
 
-                  <p className="text-sm font-albert font-bold tracking-tight text-white mt-9">POETRY</p>
-                  <p className="text-white font-nanum text-xl mt-1 tracking-tight">{`THEY'RE`} COMING FOR US</p>
+                  <p className="text-sm font-albert font-bold tracking-tight text-white mt-9">
+                    POETRY
+                  </p>
+                  <p className="text-white font-nanum text-xl mt-1 tracking-tight">
+                    {`THEY'RE`} COMING FOR US
+                  </p>
                   <p className="text-white font-nanum text-base mt-4 tracking-tight">
-                    Exploring the circus in our government where the spectacle goes on while the people are left to suffer.
+                    Exploring the circus in our government where the spectacle
+                    goes on while the people are left to suffer.
                   </p>
                 </div>
               </Link>
             </div>
-          </div>          
+          </div>
         </section>
 
         {/* collections */}
         <section id="collection" className="py-20 px-10">
           <div className="max-w-7xl mx-auto">
             <div className="mb-12">
-              <p className="text-base font-albert font-bold tracking-tight text-red-800 mb-3">Browse</p>
-              <p className="text-5xl font-nanum font-regular tracking-tight mb-3">Collection</p>
-              <p className="text-lg font-nanum font-regular tracking-tight text-gray-600 italic">Explore our curated works by category</p>
+              <p className="text-base font-albert font-bold tracking-tight text-red-800 mb-3">
+                Browse
+              </p>
+              <p className="text-5xl font-nanum font-regular tracking-tight mb-3">
+                Collection
+              </p>
+              <p className="text-lg font-nanum font-regular tracking-tight text-gray-600 italic">
+                Explore our curated works by category
+              </p>
             </div>
-            
+
             {/* category bento grid layout 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
               {collectionItems.map((item, index) => {
@@ -282,93 +320,127 @@ export default function Home() {
 
             <div className="flex flex-row gap-5 overflow-x-auto pb-6 scroll-smooth">
               {/* ITEM 1 - COPY AND PASTE */}
-              <Link 
-                href="works/kathleen-2"
-              >
+              <Link href="works/kathleen-2">
                 <div className="flex-shrink-0 w-64 cursor-pointer hover:shadow-lg transition group">
                   <div className="relative bg-gray-200 h-48 overflow-hidden">
-                  <Image
-                    src="/books.jpg"
-                    alt="Protest Image"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300 grayscale contrast-125 brightness-90"
-                  />
-
+                    <Image
+                      src="/books.jpg"
+                      alt="Protest Image"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300 grayscale contrast-125 brightness-90"
+                    />
                   </div>
                   <div className="bg-white border border-gray-200 p-4">
-                    <p 
-                      className="text-xs font-albert font-bold tracking-tight uppercase mb-1"
-                    >
+                    <p className="text-xs font-albert font-bold tracking-tight uppercase mb-1">
                       ESSAY
                     </p>
                     <p className="text-base font-nanum font-bold tracking-tight mb-2 group-hover:text-[#990100] transition">
-                      Resistance Through <br/>Reading
+                      Resistance Through <br />
+                      Reading
                     </p>
                     <p className="text-sm font-nanum font-regular tracking-tight text-gray-600 line-clamp-2">
-                      Stories fade quickly in the news, but reading brings them back to life...
+                      Stories fade quickly in the news, but reading brings them
+                      back to life...
                     </p>
                   </div>
                 </div>
               </Link>
 
-
-
+              {/* ITEM 5 - COPY AND PASTE */}
+              <Link href="works/chris-1">
+                <div className="flex-shrink-0 w-64 cursor-pointer hover:shadow-lg transition group">
+                  <div className="relative bg-gray-200 h-48 overflow-hidden">
+                    <Image
+                      src="/edsa-rev.jpg"
+                      alt="Protest Image"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="bg-white border border-gray-200 p-4">
+                    <p className="text-xs font-albert font-bold tracking-tight uppercase mb-1">
+                      POETRY
+                    </p>
+                    <p className="text-base font-nanum font-bold tracking-tight mb-2 group-hover:text-[#990100] transition">
+                      Borrowed Hope
+                    </p>
+                    <p className="text-sm font-nanum font-regular tracking-tight text-gray-600 line-clamp-3">
+                     Once envisioned as a land of promise, the nation now drifts in the shadows of broken systems and recycled lies.
+                    </p>
+                  </div>
+                </div>
+              </Link>
 
               {/* ITEM 2 - COPY AND PASTE */}
-              <Link 
-                href="works/gabriel-1"
-              >
+              <Link href="works/gabriel-1">
                 <div className="flex-shrink-0 w-64 cursor-pointer hover:shadow-lg transition group">
                   <div className="relative bg-gray-200 h-48 overflow-hidden">
-                  <Image
-                    src="/edsa-rev.jpg"
-                    alt="Protest Image"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-
+                    <Image
+                      src="/edsa-rev.jpg"
+                      alt="Protest Image"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
                   <div className="bg-white border border-gray-200 p-4">
-                    <p 
-                      className="text-xs font-albert font-bold tracking-tight uppercase mb-1"
-                    >
+                    <p className="text-xs font-albert font-bold tracking-tight uppercase mb-1">
                       ESSAY
                     </p>
                     <p className="text-base font-nanum font-bold tracking-tight mb-2 group-hover:text-[#990100] transition">
-                      Power and Resistance <br/>in Modern Society
+                      Power and Resistance <br />
+                      in Modern Society
                     </p>
                     <p className="text-sm font-nanum font-regular tracking-tight text-gray-600 line-clamp-2">
-                      We live in a world where power shapes every aspect of our lives....
+                      We live in a world where power shapes every aspect of our
+                      lives....
                     </p>
                   </div>
                 </div>
               </Link>
 
-
-
-
-              {/* ITEM 3 - COPY AND PASTE */}
-              <Link 
-                href="works/gabriel-2"
-              >
+              {/* ITEM 4 - COPY AND PASTE */}
+              <Link href="works/shania-2">
                 <div className="flex-shrink-0 w-64 cursor-pointer hover:shadow-lg transition group">
                   <div className="relative bg-gray-200 h-48 overflow-hidden">
-                  <Image
-                    src="/edsa-rev.jpg"
-                    alt="Protest Image"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-
+                    <Image
+                      src="/between-the-lights.jpg"
+                      alt="Protest Image"
+                      fill
+                      className="object-cover grayscale contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-300"
+                    />
                   </div>
                   <div className="bg-white border border-gray-200 p-4">
-                    <p 
-                      className="text-xs font-albert font-bold tracking-tight uppercase mb-1"
-                    >
+                    <p className="text-xs font-albert font-bold tracking-tight uppercase mb-1">
+                      FLASH FICTION
+                    </p>
+                    <p className="text-base font-nanum font-bold tracking-tight mb-2 group-hover:text-[#990100] transition">
+                      Between the <br /> Lights
+                    </p>
+                    <p className="text-sm font-nanum font-regular tracking-tight text-gray-600 line-clamp-2">
+                      The parol outside their window flickered unevenly, its colors....
+                    </p>
+                  </div>
+                </div>
+              </Link>
+
+              {/* ITEM 3 - COPY AND PASTE */}
+              <Link href="works/gabriel-2">
+                <div className="flex-shrink-0 w-64 cursor-pointer hover:shadow-lg transition group">
+                  <div className="relative bg-gray-200 h-48 overflow-hidden">
+                    <Image
+                      src="/edsa-rev.jpg"
+                      alt="Protest Image"
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <div className="bg-white border border-gray-200 p-4">
+                    <p className="text-xs font-albert font-bold tracking-tight uppercase mb-1">
                       REFLECTION
                     </p>
                     <p className="text-base font-nanum font-bold tracking-tight mb-2 group-hover:text-[#990100] transition">
-                      Finding Power Within:<br/> A Personal Reflection
+                      Finding Power Within:
+                      <br /> A Personal Reflection
                     </p>
                     <p className="text-sm font-nanum font-regular tracking-tight text-gray-600 line-clamp-2">
                       Power is often known to be authority....
@@ -377,17 +449,8 @@ export default function Home() {
                 </div>
               </Link>
 
-
               {/* TODO OTHER WORKS GO HERE */}
-
-
-
-
             </div>
-
-
-
-
           </div>
         </section>
 
@@ -395,20 +458,29 @@ export default function Home() {
         <section id="authors" className="py-20 px-10 bg-gray-50 -mx-10">
           <div className="max-w-7xl mx-auto">
             <div className="mb-12 px-10">
-              <p className="text-base font-albert font-bold tracking-tight text-red-800 mb-3">Meet</p>
-              <p className="text-5xl font-nanum font-regular tracking-tight mb-3">Our Team</p>
-              <p className="text-lg font-nanum font-regular tracking-tight text-gray-600 italic">The voices behind the words</p>
+              <p className="text-base font-albert font-bold tracking-tight text-red-800 mb-3">
+                Meet
+              </p>
+              <p className="text-5xl font-nanum font-regular tracking-tight mb-3">
+                Our Team
+              </p>
+              <p className="text-lg font-nanum font-regular tracking-tight text-gray-600 italic">
+                The voices behind the words
+              </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-10">
               {authors.map((author, index) => (
-                <div 
+                <div
                   key={index}
                   className="bg-white p-6 shadow-sm hover:shadow-lg transition cursor-pointer"
                 >
                   <div className="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
                     <span className="text-2xl font-nanum font-bold text-gray-600">
-                      {author.name.split(' ').map(n => n[0]).join('')}
+                      {author.name
+                        .split(" ")
+                        .map((n) => n[0])
+                        .join("")}
                     </span>
                   </div>
                   <p className="text-lg font-nanum font-bold tracking-tight text-center mb-1">
@@ -430,19 +502,36 @@ export default function Home() {
         <section id="about" className="py-20 px-10">
           <div className="max-w-4xl mx-auto">
             <div className="mb-8">
-              <p className="text-base font-albert font-bold tracking-tight text-red-800 mb-3">About</p>
-              <p className="text-5xl font-nanum font-regular tracking-tight mb-3">Our Mission</p>
+              <p className="text-base font-albert font-bold tracking-tight text-red-800 mb-3">
+                About
+              </p>
+              <p className="text-5xl font-nanum font-regular tracking-tight mb-3">
+                Our Mission
+              </p>
             </div>
-            
+
             <div className="space-y-6">
               <p className="text-lg font-nanum font-regular tracking-tight text-gray-700 leading-relaxed">
-                This magazine explores the theme of power and resistance in Philippine literature, reflecting how writers explore themes of societal struggles such as inequality, oppression, and social injustice.
+                This magazine explores the theme of power and resistance in
+                Philippine literature, reflecting how writers explore themes of
+                societal struggles such as inequality, oppression, and social
+                injustice.
               </p>
               <p className="text-lg font-nanum font-regular tracking-tight text-gray-700 leading-relaxed">
-                It examines the ways that depict the interactions between individuals and institutions where power and authority are exercised. In this context, power refers to the authority of individuals and institutions, including their ability to influence and dominate others. While resistance represents the efforts of others to challenge authority or to endure it to survive.
+                It examines the ways that depict the interactions between
+                individuals and institutions where power and authority are
+                exercised. In this context, power refers to the authority of
+                individuals and institutions, including their ability to
+                influence and dominate others. While resistance represents the
+                efforts of others to challenge authority or to endure it to
+                survive.
               </p>
               <p className="text-lg font-nanum font-regular tracking-tight text-gray-700 leading-relaxed">
-                Due to this, Philippine literature becomes a tool that allows writers and individuals to shed light on these struggles and give voice to those who resist and endure. Allowing the spread of awareness and inspiring and encouraging action and resilience in the face of injustice.
+                Due to this, Philippine literature becomes a tool that allows
+                writers and individuals to shed light on these struggles and
+                give voice to those who resist and endure. Allowing the spread
+                of awareness and inspiring and encouraging action and resilience
+                in the face of injustice.
               </p>
             </div>
           </div>
