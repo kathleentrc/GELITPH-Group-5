@@ -163,7 +163,8 @@ export default function Home() {
                     GROWING UP FINDING MY VOICE
                   </p>
                   <p className="text-white font-nanum text-base mt-4 tracking-tight">
-                    Power isn't something new to us. We grow up learning who holds it long before we ever learn what it...
+                    Power isn't something new to us. We grow up learning who
+                    holds it long before we ever learn what it...
                   </p>
                 </div>
               </Link>
@@ -351,10 +352,10 @@ export default function Home() {
                 <div className="flex-shrink-0 w-64 cursor-pointer hover:shadow-lg transition group">
                   <div className="relative bg-gray-200 h-48 overflow-hidden">
                     <Image
-                      src="/edsa-rev.jpg"
+                      src="/borrowed-hope.jpg"
                       alt="Protest Image"
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="object-cover grayscale contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <div className="bg-white border border-gray-200 p-4">
@@ -365,7 +366,8 @@ export default function Home() {
                       Borrowed Hope
                     </p>
                     <p className="text-sm font-nanum font-regular tracking-tight text-gray-600 line-clamp-3">
-                     Once envisioned as a land of promise, the nation now drifts in the shadows of broken systems and recycled lies.
+                      Once envisioned as a land of promise, the nation now
+                      drifts in the shadows of broken systems and recycled lies.
                     </p>
                   </div>
                 </div>
@@ -417,7 +419,8 @@ export default function Home() {
                       Between the <br /> Lights
                     </p>
                     <p className="text-sm font-nanum font-regular tracking-tight text-gray-600 line-clamp-2">
-                      The parol outside their window flickered unevenly, its colors....
+                      The parol outside their window flickered unevenly, its
+                      colors....
                     </p>
                   </div>
                 </div>
@@ -428,7 +431,7 @@ export default function Home() {
                 <div className="flex-shrink-0 w-64 cursor-pointer hover:shadow-lg transition group">
                   <div className="relative bg-gray-200 h-48 overflow-hidden">
                     <Image
-                      src="/edsa-rev.jpg"
+                      src="/finding-power.png"
                       alt="Protest Image"
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
