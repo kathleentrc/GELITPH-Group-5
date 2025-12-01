@@ -9,9 +9,9 @@ const Cruz = () => {
         {/* top section */}
         <div className="flex flex-row items-center h-screen">
           <div className="w-1/2 flex flex-col items-center gap-2">
-            <p className="text-sm font-albert font-bold tracking-tight mb-5">REFLECTION</p>
-            <p className="text-3xl font-nanum font-bold tracking-tight mb-1 px-24 text-center">INVISIBLE IN PLAIN SIGHT:<br/>A PERSONAL REFLECTION</p>
-            <p className="text-base font-nanum font-regular tracking-tight text-center px-24 mb-3 italic">Written by Vincent Castillo</p>
+            <p className="text-sm font-albert font-bold tracking-tight mb-5">ESSAY</p>
+            <p className="text-3xl font-nanum font-bold tracking-tight mb-1 px-24 text-center">RESISTANCE THROUGH READING</p>
+            <p className="text-base font-nanum font-regular tracking-tight text-center px-24 mb-3 italic">Written by Kathleen Therese Cruz</p>
           </div>
           
           <div className="w-1/2 relative flex-1 h-full overflow-hidden">
@@ -19,7 +19,7 @@ const Cruz = () => {
               src="/edsa-rev.jpg"
               alt="Protest Image"
               fill
-              className="object-cover mt-14 py-32"
+              className="object-cover mt-14 py-32 grayscale contrast-125 brightness-90"
             />
           </div>
         </div>
@@ -29,25 +29,22 @@ const Cruz = () => {
         <div className="flex flex-col h-fit bg-gray-100 text-black -mx-10 px-96 py-14">
           <p className="text-xl leading-relaxed mb-14">
             <span className="text-6xl float-left leading-none mr-1">T</span>
-            o me, it felt like being invincible.
-
+            hroughout the past years, I have witnessed the lives of ordinary Filipinos being taken away in the news, in the articles I’ve read, and in the literature I’ve consumed. This is a result of the destructive nature of absolute power. Power, in the wrong hands, corrupts, and it creates a cycle of violence and injustice that still continues in the country today. 
             <br/><br/>
-            It was within a moment I anticipated being heard but was not. I remember expressing an idea that had meaning to me; it seemed to be ignored; my words somehow did not matter. A few minutes later, the same idea was stated by someone else, and suddenly everybody was paying attention. It was just a small event, but somehow it reduced me to something small, as if my thoughts had been irrelevant because others were seen as more important. I sat there wondering why such an incident could disturb me. 
 
+            Power is not only something held by those in authority. We all possess it, but some people, especially those above us, fail to practice it properly. 
+
+            This is evident during the Duterte administration. His three words, “shoot them dead,” carried a form of power that took thousands of lives away during his presidency. Some, like Kian Delos Santos, were already familiar to me. To others, their names may have been reduced to numbers. One person became hundreds, followed by thousands. 
             <br/><br/>
-            I SATURATED MYSELF with such stories about social injustice in order that I come to terms with the phenomenon of being overlooked or treated as less by millions of other people who go through more severe and more painful experiences. In “Sa Mga Kuko ng Liwanag,” Julio, though hard-working and struggling to survive, faces a society that does not even recognize him at all. Furthermore, in “The Virgin” by Kerima Polotan-Tuvera, Miss Mijares seems to meander through life, so molded by the expectations and judgements that confine her worth before others. 
 
+            Their stories fade quickly in the news, but reading literature brings them back to life again. According to Ezra Pound, literature is {`"news that stays news”`}. Because of it, we learn to remember dates and the names of victims who are denied due process and justice due to absolute power. By reading literature, we learn empathy and kindness. However, it doesn’t simply stop there—it’s only the start of our “pagkamulat”. When absolute power exists, we must also resist and fight against it. 
             <br/><br/>
-            These stories have helped me understand that my own experience has a measure. Even if it’s comparatively little, it still mirrors a genuine issue. Literature has enabled me to speak of something I could not articulate well before. It made me understand that invisibility is not only being ignored. It also has to do with how society empowers certain voices but silences others.
 
+            Once we’ve opened our eyes to how power corrupts, we learn to resist and take action: vote for public officials who exercise their power in the right way. Read books and articles about Martial Law, the War on Drugs, the Israel-Palestine conflict, and many other issues that continue to affect humanity. Protest and fight for the issues that demand accountability and proper action.
             <br/><br/>
-            I learned that justice does not talk only about laws or major decisions; sometimes it begins with simple things like listening, fairly acknowledging the other, or respecting each and every person. The silence in itself engenders social injustice. When the voice of distaste is raised with awareness and understanding, it nurtures resilience among the oppressed. The thought of how it feels to feel unheard drives with determination my desire to ensure that no one else is made to feel in the same way. 
 
+            My understanding of power has evolved into a commitment to stay informed, to challenge the system, and to take action—this is where resistance begins.
             <br/><br/>
-            I think back to how loud the room was and how utterly quiet it felt inside. In hindsight, however, that silence in itself was not weakening, as it taught me to honor every voice, including my own. 
-
-
-
           </p>
 
 
@@ -57,15 +54,15 @@ const Cruz = () => {
             <div className="flex items-start gap-4 mt-5">
               <div className="w-16 h-16 bg-gray-300 rounded-full flex items-center justify-center flex-shrink-0">
                 <span className="text-xl font-nanum font-bold text-gray-600">
-                  VTC
+                  KTC
                 </span>
               </div>
               <div>
                 <h3 className="text-xl font-nanum font-bold tracking-tight mb-1 text-[#171717] mt-1">
-                  Vincent Thaddeus Castillo
+                  Kathleen Therese Cruz
                 </h3>
                 <p className="text-sm font-nanum font-regular text-gray-600">
-                  Contributing writer exploring themes of power, resistance, and social justice in Philippine literature.
+                  Contributing writer exploring themes of power, resistance, and social justice.
                 </p>
               </div>
             </div>
@@ -106,7 +103,7 @@ const Cruz = () => {
 
 
 
-            <Link href="/works/kathleen">
+            <Link href="/works/vincent">
               <div className="flex flex-col max-w-[500px] flex-1 cursor-pointer 
                               overflow-hidden 
                               transition-all duration-300 
@@ -117,14 +114,14 @@ const Cruz = () => {
                     src="/edsa-rev.jpg"
                     alt="Protest Image"
                     fill
-                    className="object-cover transition-transform duration-300 hover:scale-105"
+                    className="object-cover transition-transform duration-300 hover:scale-105 grayscale contrast-125 brightness-90"
                   />
                 </div>
 
-                <p className="text-sm font-albert font-bold tracking-tight text-red-800 mt-9">POETRY</p>
-                <p className="text-black font-nanum text-xl mt-1 tracking-tight">{`THEY'RE COMING FOR US`}</p>
+                <p className="text-sm font-albert font-bold tracking-tight text-red-800 mt-9">REFLECTION</p>
+                <p className="text-black font-nanum text-xl mt-1 tracking-tight">INVISIBLE IN PLAIN SIGHT</p>
                 <p className="text-black font-nanum text-base mt-4 tracking-tight">
-                  Exploring the circus in our government where the spectacle goes on while the people are left to suffer.
+                  To me, it felt like being invincible. It was within a moment I anticipated being heard but was not...
                 </p>
               </div>
             </Link>

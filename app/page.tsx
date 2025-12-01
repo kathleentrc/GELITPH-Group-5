@@ -21,27 +21,27 @@ export default function Home() {
     {
       name: "Gabriel Clarence Balboa",
       role: "Poet & Writer",
-      bio: "Exploring themes of resistance and identity through verse."
+      bio: ""
     },
     {
       name: "Vincent Thaddeus Catalan Castillo",
       role: "Fiction Writer",
-      bio: "Crafting narratives that challenge societal norms."
+      bio: ""
     },
     {
       name: "Shania Francine Tagudinay Cloma",
       role: "Essayist & Web Developer",
-      bio: "Examining power dynamics in contemporary society."
+      bio: ""
     },
     {
       name: "Kathleen Therese Ramos Cruz",
       role: "Poet & Web Developer",
-      bio: "Giving voice to untold stories of resilience."
+      bio: ""
     },
     {
       name: "Christophe Mervyn Lacustales Rodriguez",
       role: "Editor",
-      bio: "Curating the best of Philippine literature."
+      bio: ""
     }
   ];
 
@@ -132,7 +132,7 @@ export default function Home() {
                       src="/featured1.png"
                       alt="Protest Image"
                       fill
-                      className="object-cover rounded grayscale contrast-125 brightness-90"
+                      className="object-cover grayscale contrast-125 brightness-90"
                     />
                   </div>
 
@@ -145,14 +145,14 @@ export default function Home() {
               </Link>
 
               {/* piece 2 */}
-              <Link href="/works/vincent">
+              <Link href="/works/vincent-1">
                 <div className="flex flex-col max-w-[500px] flex-1 cursor-pointer hover:shadow-lg transition">
                   <div className="w-full h-[260px] relative">
                     <Image
-                      src="/edsa-rev.jpg"
+                      src="/vincent-placeholder.jpg"
                       alt="Protest Image"
                       fill
-                      className="object-cover rounded"
+                      className="object-cover grayscale contrast-125 brightness-90"
                     />
                   </div>
 
@@ -167,14 +167,14 @@ export default function Home() {
 
 
               {/* piece 3 */}
-              <Link href="/works/kathleen">
+              <Link href="/works/kathleen-1">
                 <div className="flex flex-col max-w-[500px] flex-1 cursor-pointer hover:shadow-lg transition">
                   <div className="w-full h-[260px] relative">
                     <Image
                       src="/edsa-rev.jpg"
                       alt="Protest Image"
                       fill
-                      className="object-cover rounded"
+                      className="object-cover"
                     />
                   </div>
 
@@ -198,7 +198,7 @@ export default function Home() {
               <p className="text-lg font-nanum font-regular tracking-tight text-gray-600 italic">Explore our curated works by category</p>
             </div>
             
-            {/* category bento grid layout */}
+            {/* category bento grid layout 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
               {collectionItems.map((item, index) => {
                 const categorySlug = item.category.toLowerCase().replace(/\s+/g, '-');
@@ -231,9 +231,9 @@ export default function Home() {
                   </Link>
                 );
               })}
-            </div>
+            </div>*/}
 
-            {/* scrollable preview */}
+            {/* scrollable preview 
             <div className="overflow-x-auto pb-6 scroll-smooth">
               <div className="flex gap-6 min-w-max">
                 {[1, 2, 3, 4, 5, 6].map((item) => {
@@ -278,7 +278,116 @@ export default function Home() {
                   );
                 })}
               </div>
+            </div>*/}
+
+            <div className="flex flex-row gap-5 overflow-x-auto pb-6 scroll-smooth">
+              {/* ITEM 1 - COPY AND PASTE */}
+              <Link 
+                href="works/kathleen-2"
+              >
+                <div className="flex-shrink-0 w-64 cursor-pointer hover:shadow-lg transition group">
+                  <div className="relative bg-gray-200 h-48 overflow-hidden">
+                  <Image
+                    src="/edsa-rev.jpg"
+                    alt="Protest Image"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+
+                  </div>
+                  <div className="bg-white border border-gray-200 p-4">
+                    <p 
+                      className="text-xs font-albert font-bold tracking-tight uppercase mb-1"
+                    >
+                      ESSAY
+                    </p>
+                    <p className="text-base font-nanum font-bold tracking-tight mb-2 group-hover:text-[#990100] transition">
+                      Resistance Through <br/>Reading
+                    </p>
+                    <p className="text-sm font-nanum font-regular tracking-tight text-gray-600 line-clamp-2">
+                      Stories fade quickly in the news, but reading brings them back to life...
+                    </p>
+                  </div>
+                </div>
+              </Link>
+
+
+
+
+              {/* ITEM 2 - COPY AND PASTE */}
+              <Link 
+                href="works/gabriel-1"
+              >
+                <div className="flex-shrink-0 w-64 cursor-pointer hover:shadow-lg transition group">
+                  <div className="relative bg-gray-200 h-48 overflow-hidden">
+                  <Image
+                    src="/edsa-rev.jpg"
+                    alt="Protest Image"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+
+                  </div>
+                  <div className="bg-white border border-gray-200 p-4">
+                    <p 
+                      className="text-xs font-albert font-bold tracking-tight uppercase mb-1"
+                    >
+                      ESSAY
+                    </p>
+                    <p className="text-base font-nanum font-bold tracking-tight mb-2 group-hover:text-[#990100] transition">
+                      Power and Resistance <br/>in Modern Society
+                    </p>
+                    <p className="text-sm font-nanum font-regular tracking-tight text-gray-600 line-clamp-2">
+                      We live in a world where power shapes every aspect of our lives....
+                    </p>
+                  </div>
+                </div>
+              </Link>
+
+
+
+
+              {/* ITEM 3 - COPY AND PASTE */}
+              <Link 
+                href="works/gabriel-2"
+              >
+                <div className="flex-shrink-0 w-64 cursor-pointer hover:shadow-lg transition group">
+                  <div className="relative bg-gray-200 h-48 overflow-hidden">
+                  <Image
+                    src="/edsa-rev.jpg"
+                    alt="Protest Image"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+
+                  </div>
+                  <div className="bg-white border border-gray-200 p-4">
+                    <p 
+                      className="text-xs font-albert font-bold tracking-tight uppercase mb-1"
+                    >
+                      REFLECTION
+                    </p>
+                    <p className="text-base font-nanum font-bold tracking-tight mb-2 group-hover:text-[#990100] transition">
+                      Finding Power Within:<br/> A Personal Reflection
+                    </p>
+                    <p className="text-sm font-nanum font-regular tracking-tight text-gray-600 line-clamp-2">
+                      Power is often known to be authority....
+                    </p>
+                  </div>
+                </div>
+              </Link>
+
+
+              {/* TODO OTHER WORKS GO HERE */}
+
+
+
+
             </div>
+
+
+
+
           </div>
         </section>
 
@@ -295,7 +404,7 @@ export default function Home() {
               {authors.map((author, index) => (
                 <div 
                   key={index}
-                  className="bg-white rounded-lg p-6 shadow-sm hover:shadow-lg transition cursor-pointer"
+                  className="bg-white p-6 shadow-sm hover:shadow-lg transition cursor-pointer"
                 >
                   <div className="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
                     <span className="text-2xl font-nanum font-bold text-gray-600">

@@ -83,7 +83,7 @@ const Cruz = () => {
                   Kathleen Therese Cruz
                 </h3>
                 <p className="text-sm font-nanum font-regular text-gray-600">
-                  Contributing writer exploring themes of power, resistance, and social justice in Philippine literature.
+                  Contributing writer exploring themes of power, resistance, and social justice.
                 </p>
               </div>
             </div>
@@ -124,7 +124,7 @@ const Cruz = () => {
 
 
 
-            <Link href="/works/vincent">
+            <Link href="/works/vincent-1">
               <div className="flex flex-col max-w-[500px] flex-1 cursor-pointer 
                               overflow-hidden 
                               transition-all duration-300 
@@ -132,10 +132,10 @@ const Cruz = () => {
                 
                 <div className="w-full h-[260px] relative">
                   <Image
-                    src="/edsa-rev.jpg"
+                    src="/vincent-placeholder.jpg"
                     alt="Protest Image"
                     fill
-                    className="object-cover transition-transform duration-300 hover:scale-105"
+                    className="object-cover transition-transform duration-300 hover:scale-105 grayscale contrast-125 brightness-90"
                   />
                 </div>
 

@@ -11,18 +11,21 @@ export default function ArticlePage() {
   // sample article data 
   const article = {
     id: slug,
-    title: 'Voices of the Unheard',
-    tag: 'POETRY',
+    title: 'Power and Resistance in Modern Society',
+    tag: 'ESSAY',
     author: 'Gabriel Clarence Balboa',
-    date: 'March 15, 2024',
+    date: 'November 27, 2025',
     image: '/edsa-rev.jpg',
-    imageSource: 'Photo by John Doe, Unsplash',
-    content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget velit non nulla commodo congue sit amet in dui. Cras at sollicitudin quam, quis rutrum libero. Proin ut vestibulum ligula. Praesent pellentesque metus justo, eget laoreet urna tempor a. Ut quis mi feugiat, facilisis lorem vitae, tincidunt justo. Nunc et diam volutpat, malesuada quam sit amet, auctor justo. Aliquam et eros ac nibh facilisis fringilla. Nunc eget nibh eget velit dignissim condimentum. In hac habitasse platea dictumst. Nulla lobortis lectus eu nisi porta rutrum. In at quam vel enim cursus porta.
+    imageSource: '',
+    content: `We live in a world where power shapes nearly every aspect of our lives. We work to gain power, believing that it will bring fulfillment or rise through societal hierarchies. Whether we acknowledge it or not, power is there controlling our very lives. Power decides and shapes society, who decides, and who must follow. Resistance comes to those who are strong willed, emerging to those who want change, instead of faltering to the demands of authority.  This has been what shaped society since its inception: power to control people, creating change for one's own benefit or for the advancement of society; resistance to check the balance of power, see that no abuse or total power is achieved. 
 
-Phasellus eget tempor justo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam ac lectus non elit tempor fermentum accumsan non orci. Vestibulum porta quam eget magna rutrum, in rutrum magna porta. Sed sit amet nulla ac nisl pharetra scelerisque vel in arcu. Suspendisse in justo quis velit consequat sagittis. Donec ut ultricies risus, commodo porta augue. Donec vulputate ullamcorper pharetra.
+    These forces are in constant tension. Power creates conditions for resistance, while resistance constantly reshapes the meaning of power and how it’s exercised. Understanding this reveals what power truly is, it is never absolute. No matter how much power a person has, with enough resistance, they can fall and submit. Even at times where one feels powerless, they must find a way to fight and resist, instead of groveling to  submission to the power of authority. Everyone has the power of change, what lacks is the courage and will to do so.
 
-Curabitur ornare tempus quam sit amet tincidunt. Quisque volutpat nisl vitae magna semper lobortis. Donec libero metus, gravida quis cursus a, mollis congue eros. Sed volutpat dictum metus non porta. Aenean ullamcorper condimentum venenatis. In hendrerit sem vel urna vulputate, non imperdiet nisi semper. Donec egestas, arcu at tincidunt volutpat, felis sapien tincidunt nibh, nec interdum velit erat sit amet libero. Donec lobortis nisl et nisl convallis ornare. Pellentesque malesuada hendrerit lorem, a convallis nisi mattis sit amet. Quisque consectetur massa tortor, non placerat leo efficitur sit amet. Phasellus vitae porta neque. In suscipit, nisl in vehicula mollis, velit neque placerat libero, in dictum ipsum sem id risus. Nam finibus hendrerit nibh quis molestie. In dignissim non mauris a lobortis. In semper augue id arcu faucibus suscipit. Donec a euismod arcu, vitae molestie mauris.`,
-    category: 'Poetry'
+    In our modern society, resistance has taken new forms. With the prevalent use of technology, people have been able to communicate and gather with great speed. Giving voices to those marginalized and exposing the wrong doing of people. However, while essential, it can be controlled and abused by those with power. The spread of misinformation and fake news, to hide the misconducts and abuses caused by them, is strong. People tend to not research what they learn, being bombarded with information everyday, fact checking each one tends to be an impossible task. Tending to keep within their circle of knowledge, believing what they have, believing in what they believe in. 
+
+    Power and resistance remains fundamental to our society, defining what it truly means. While power still controls our society, people are now capable of resisting and challenging them with great speed. The digital age has made resistance more accessible, while introducing more vulnerabilities requiring presence and responsibility. So while power is still guiding and a major influence, resistance lessens this and ensures that it continues to evolve in new ways.
+`,
+    category: 'Essays'
   };
 
   // related articles
