@@ -288,10 +288,10 @@ export default function Home() {
                 <div className="flex-shrink-0 w-64 cursor-pointer hover:shadow-lg transition group">
                   <div className="relative bg-gray-200 h-48 overflow-hidden">
                   <Image
-                    src="/edsa-rev.jpg"
+                    src="/books.jpg"
                     alt="Protest Image"
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300 grayscale contrast-125 brightness-90"
                   />
 
                   </div>

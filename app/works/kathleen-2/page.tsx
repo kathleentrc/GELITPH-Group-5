@@ -16,7 +16,7 @@ const Cruz = () => {
           
           <div className="w-1/2 relative flex-1 h-full overflow-hidden">
             <Image
-              src="/edsa-rev.jpg"
+              src="/books.jpg"
               alt="Protest Image"
               fill
               className="object-cover mt-14 py-32 grayscale contrast-125 brightness-90"
