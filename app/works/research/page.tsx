@@ -148,7 +148,7 @@ const Research = () => {
 
           {/* other works */}
           <div className="flex flex-row gap-7">
-            <Link href="/works/kathleen">
+            <Link href="/works/vincent">
               <div className="flex flex-col max-w-[500px] flex-1 cursor-pointer 
                               overflow-hidden 
                               transition-all duration-300 
@@ -163,10 +163,10 @@ const Research = () => {
                   />
                 </div>
 
-                <p className="text-sm font-albert font-bold tracking-tight text-red-800 mt-9">POETRY</p>
-                <p className="text-black font-nanum text-xl mt-1 tracking-tight">LOREM IPSUM DOLOR SIT</p>
+                <p className="text-sm font-albert font-bold tracking-tight text-red-800 mt-9">REFLECTION</p>
+                <p className="text-black font-nanum text-xl mt-1 tracking-tight">INVISIBLE IN PLAIN SIGHT</p>
                 <p className="text-black font-nanum text-base mt-4 tracking-tight">
-                  Dirt was my first hypothesis. It had its way of going where nothing else would go...
+                  To me, it felt like being invincible. It was within a moment I anticipated being heard but was not...
                 </p>
               </div>
             </Link>
@@ -189,9 +189,9 @@ const Research = () => {
                 </div>
 
                 <p className="text-sm font-albert font-bold tracking-tight text-red-800 mt-9">POETRY</p>
-                <p className="text-black font-nanum text-xl mt-1 tracking-tight">LOREM IPSUM DOLOR SIT</p>
+                <p className="text-black font-nanum text-xl mt-1 tracking-tight">{`THEY'RE COMING FOR US`}</p>
                 <p className="text-black font-nanum text-base mt-4 tracking-tight">
-                  Dirt was my first hypothesis. It had its way of going where nothing else would go...
+                  Exploring the circus in our government where the spectacle goes on while the people are left to suffer.
                 </p>
               </div>
             </Link>
