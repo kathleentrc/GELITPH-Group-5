@@ -30,7 +30,8 @@ const Cloma = () => {
         </div>
 
         <p className="text-[10px] text-white/60 italic mt-2 text-right pr-2">
-          Image from https://bluprint-onemega.com/interiors/homes/objects/everything-you-need-to-know-about-the-parol/
+          Image from
+          https://bluprint-onemega.com/interiors/homes/objects/everything-you-need-to-know-about-the-parol/
         </p>
 
         {/* content section */}
@@ -207,7 +208,7 @@ const Cloma = () => {
               </div>
             </Link>
 
-            <Link href="/works/vincent">
+            <Link href="/works/kathleen-1">
               <div
                 className="flex flex-col max-w-[500px] flex-1 cursor-pointer 
                               overflow-hidden 
@@ -224,14 +225,14 @@ const Cloma = () => {
                 </div>
 
                 <p className="text-sm font-albert font-bold tracking-tight text-red-800 mt-9">
-                  REFLECTION
+                  POETRY
                 </p>
                 <p className="text-black font-nanum text-xl mt-1 tracking-tight">
-                  INVISIBLE IN PLAIN SIGHT
+                  {`THEY'RE`} COMING FOR US
                 </p>
                 <p className="text-black font-nanum text-base mt-4 tracking-tight">
-                  To me, it felt like being invincible. It was within a moment I
-                  anticipated being heard but was not...
+                  Exploring the circus in our government where the spectacle
+                  goes on while the people are left to suffer.
                 </p>
               </div>
             </Link>

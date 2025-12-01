@@ -92,7 +92,7 @@ const Cloma = () => {
 
           {/* other works */}
           <div className="flex flex-row gap-7">
-            <Link href="/works/research">
+            <Link href="/works/shania-2">
               <div
                 className="flex flex-col max-w-[500px] flex-1 cursor-pointer 
                               overflow-hidden 
@@ -101,7 +101,7 @@ const Cloma = () => {
               >
                 <div className="w-full h-[260px] relative">
                   <Image
-                    src="/featured1.png"
+                    src="/between-the-lights.jpg"
                     alt="Protest Image"
                     fill
                     className="object-cover transition-transform duration-300 hover:scale-105 grayscale contrast-125 brightness-90"
@@ -109,20 +109,19 @@ const Cloma = () => {
                 </div>
 
                 <p className="text-sm font-albert font-bold tracking-tight text-red-800 mt-9">
-                  ESSAY
+                  FLASH FICTION
                 </p>
                 <p className="text-black font-nanum text-xl mt-1 tracking-tight">
-                  HISTORY OF POWER IN THE PHILIPPINES
+                  BETWEEN THE LIGHTS
                 </p>
                 <p className="text-black font-nanum text-base mt-4 tracking-tight">
-                  In the historical context, power has often been seen as
-                  authority figures, from precolonial Datus to Presidents, in
-                  modern times.
+                  The parol outside their window flickered unevenly, its colors
+                  pooling onto the living room floor where....
                 </p>
               </div>
             </Link>
 
-            <Link href="/works/vincent">
+            <Link href="/works/kathleen-1">
               <div
                 className="flex flex-col max-w-[500px] flex-1 cursor-pointer 
                               overflow-hidden 
@@ -139,14 +138,14 @@ const Cloma = () => {
                 </div>
 
                 <p className="text-sm font-albert font-bold tracking-tight text-red-800 mt-9">
-                  REFLECTION
+                  POETRY
                 </p>
                 <p className="text-black font-nanum text-xl mt-1 tracking-tight">
-                  INVISIBLE IN PLAIN SIGHT
+                  {`THEY'RE`} COMING FOR US
                 </p>
                 <p className="text-black font-nanum text-base mt-4 tracking-tight">
-                  To me, it felt like being invincible. It was within a moment I
-                  anticipated being heard but was not...
+                  Exploring the circus in our government where the spectacle
+                  goes on while the people are left to suffer.
                 </p>
               </div>
             </Link>

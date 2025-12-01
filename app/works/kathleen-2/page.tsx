@@ -78,37 +78,41 @@ const Cruz = () => {
 
           {/* other works */}
           <div className="flex flex-row gap-7">
-            <Link href="/works/research">
-              <div className="flex flex-col max-w-[500px] flex-1 cursor-pointer 
+            <Link href="/works/shania-2">
+              <div
+                className="flex flex-col max-w-[500px] flex-1 cursor-pointer 
                               overflow-hidden 
                               transition-all duration-300 
-                              hover:-translate-y-1">
-                
+                              hover:-translate-y-1"
+              >
                 <div className="w-full h-[260px] relative">
                   <Image
-                    src="/featured1.png"
+                    src="/between-the-lights.jpg"
                     alt="Protest Image"
                     fill
                     className="object-cover transition-transform duration-300 hover:scale-105 grayscale contrast-125 brightness-90"
                   />
                 </div>
 
-                <p className="text-sm font-albert font-bold tracking-tight text-red-800 mt-9">ESSAY</p>
-                <p className="text-black font-nanum text-xl mt-1 tracking-tight">HISTORY OF POWER IN THE PHILIPPINES</p>
+                <p className="text-sm font-albert font-bold tracking-tight text-red-800 mt-9">
+                  FLASH FICTION
+                </p>
+                <p className="text-black font-nanum text-xl mt-1 tracking-tight">
+                  BETWEEN THE LIGHTS
+                </p>
                 <p className="text-black font-nanum text-base mt-4 tracking-tight">
-                  In the historical context, power has often been seen as authority figures,  from precolonial Datus to Presidents, in modern times. 
+                  The parol outside their window flickered unevenly, its colors pooling onto the living room floor where....
                 </p>
               </div>
             </Link>
 
-
-
-            <Link href="/works/vincent">
-              <div className="flex flex-col max-w-[500px] flex-1 cursor-pointer 
+            <Link href="/works/kathleen-1">
+              <div
+                className="flex flex-col max-w-[500px] flex-1 cursor-pointer 
                               overflow-hidden 
                               transition-all duration-300 
-                              hover:-translate-y-1 mb-20">
-                
+                              hover:-translate-y-1 mb-20"
+              >
                 <div className="w-full h-[260px] relative">
                   <Image
                     src="/edsa-rev.jpg"
@@ -118,10 +122,15 @@ const Cruz = () => {
                   />
                 </div>
 
-                <p className="text-sm font-albert font-bold tracking-tight text-red-800 mt-9">REFLECTION</p>
-                <p className="text-black font-nanum text-xl mt-1 tracking-tight">INVISIBLE IN PLAIN SIGHT</p>
+                <p className="text-sm font-albert font-bold tracking-tight text-red-800 mt-9">
+                  POETRY
+                </p>
+                <p className="text-black font-nanum text-xl mt-1 tracking-tight">
+                  {`THEY'RE`} COMING FOR US
+                </p>
                 <p className="text-black font-nanum text-base mt-4 tracking-tight">
-                  To me, it felt like being invincible. It was within a moment I anticipated being heard but was not...
+                  Exploring the circus in our government where the spectacle
+                  goes on while the people are left to suffer.
                 </p>
               </div>
             </Link>

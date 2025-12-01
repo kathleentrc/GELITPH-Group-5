@@ -170,7 +170,7 @@ export default function Home() {
               </Link>
 
               {/* piece 2 */}
-              <Link href="/works/vincent-1">
+              <Link href="/works/research">
                 <div className="flex flex-col max-w-[500px] flex-1 cursor-pointer hover:shadow-lg transition">
                   <div className="w-full h-[260px] relative">
                     <Image
@@ -182,14 +182,13 @@ export default function Home() {
                   </div>
 
                   <p className="text-sm font-albert font-bold tracking-tight text-white mt-9">
-                    REFLECTION
+                    ESSAY
                   </p>
                   <p className="text-white font-nanum text-xl mt-1 tracking-tight">
-                    INVISIBLE IN PLAIN SIGHT
+                    HISTORY OF POWER IN THE PHILIPPINES
                   </p>
                   <p className="text-white font-nanum text-base mt-4 tracking-tight">
-                    To me, it felt like being invincible. It was within a moment
-                    I anticipated being heard but was not...
+                    Power is seen as the way to influence others and change events or actions to achieve one's goals. This...
                   </p>
                 </div>
               </Link>
@@ -434,7 +433,7 @@ export default function Home() {
                       src="/finding-power.png"
                       alt="Protest Image"
                       fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="object-cover grayscale contrast-125 brightness-90 group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <div className="bg-white border border-gray-200 p-4">
