@@ -125,7 +125,7 @@ export default function Home() {
 
             <div className="flex flex-row items-center justify-center gap-10">
               {/* piece 1 */}
-              <Link href="/works/kathleen">
+              <Link href="/works/research">
                 <div className="flex flex-col max-w-[500px] flex-1 cursor-pointer hover:shadow-lg transition">
                   <div className="w-full h-[260px] relative">
                     <Image
@@ -136,10 +136,10 @@ export default function Home() {
                     />
                   </div>
 
-                  <p className="text-sm font-albert font-bold tracking-tight text-white mt-9">POETRY</p>
-                  <p className="text-white font-nanum text-xl mt-1 tracking-tight">LOREM IPSUM DOLOR SIT</p>
+                  <p className="text-sm font-albert font-bold tracking-tight text-white mt-9">ESSAY</p>
+                  <p className="text-white font-nanum text-xl mt-1 tracking-tight">HISTORY OF POWER IN THE PHILIPPINES</p>
                   <p className="text-white font-nanum text-base mt-4 tracking-tight">
-                    Dirt was my first hypothesis. It had its way of going where nothing else would go...
+                    In the historical context, power has often been seen as authority figures,  from precolonial Datus to Presidents, in modern times....
                   </p>
                 </div>
               </Link>
