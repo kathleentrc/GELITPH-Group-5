@@ -129,10 +129,10 @@ export default function Home() {
                 <div className="flex flex-col max-w-[500px] flex-1 cursor-pointer hover:shadow-lg transition">
                   <div className="w-full h-[260px] relative">
                     <Image
-                      src="/edsa-rev.jpg"
+                      src="/featured1.png"
                       alt="Protest Image"
                       fill
-                      className="object-cover rounded"
+                      className="object-cover rounded grayscale contrast-125 brightness-90"
                     />
                   </div>
 

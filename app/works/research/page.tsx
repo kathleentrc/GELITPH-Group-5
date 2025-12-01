@@ -16,10 +16,10 @@ const Research = () => {
           
           <div className="w-1/2 relative flex-1 h-full overflow-hidden">
             <Image
-              src="/protest.png"
+              src="/featured1.png"
               alt="Protest Image"
               fill
-              className="object-cover mt-14 py-32"
+              className="object-cover mt-14 py-32 grayscale contrast-125 brightness-90"
             />
           </div>
         </div>
@@ -29,7 +29,7 @@ const Research = () => {
         <div className="flex flex-col h-fit bg-gray-100 text-black -mx-10 px-96 py-14">
           <p className="text-xl leading-relaxed mb-5">
             <span className="text-6xl float-left leading-none mr-1">P</span>
-            ower is seen as the way to influence others and change events or actions to achieve one's goals. This can be done in different forms, such as authority, wealth, government, or social hierarchy.
+            ower is seen as the way to influence others and change events or actions to achieve {`one's`} goals. This can be done in different forms, such as authority, wealth, government, or social hierarchy.
             In the historical context, power has often been seen as authority figures,  from precolonial Datus to Presidents, in modern times. During the Spanish colonial period, the King was the highest figure, with the Governor-General and local officials enforcing rules. The Spaniards and friars were often the key figures of authority, having so much power that abuse of the Filipino people frequently happened. This usually came from religious domination or an unjust economic system that often favors the Spanish elites. These types of abuses have shaped society today, with widespread corruption and political repression. 
           </p>
 
@@ -132,7 +132,7 @@ const Research = () => {
                 Christophe Mervyn Rodriguez
               </h3>
               <p className="text-sm font-nanum font-regular text-gray-600">
-                Contributing writer exploring themes of power, resistance, and social justice in Philippine literature.
+                Curating the best of Philippine literature.
               </p>
             </div>
           </div>
@@ -164,7 +164,7 @@ const Research = () => {
                 </div>
 
                 <p className="text-sm font-albert font-bold tracking-tight text-red-800 mt-9">POETRY</p>
-                <p className="text-black font-nanum text-xl mt-1 tracking-tight">LOREM IPSUM DOLOR SIgggT</p>
+                <p className="text-black font-nanum text-xl mt-1 tracking-tight">LOREM IPSUM DOLOR SIT</p>
                 <p className="text-black font-nanum text-base mt-4 tracking-tight">
                   Dirt was my first hypothesis. It had its way of going where nothing else would go...
                 </p>
