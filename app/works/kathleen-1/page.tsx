@@ -44,8 +44,8 @@ const Cruz = () => {
             <i>I can give you a promising future</i>, they said.<br/><br/>
 
             I spent years searching for that promise<br/>
-            While they rummaged through a circus<br/>
-            In front of our very eyes.<br/>
+            While they performed in a circus<br/>
+            In front of my very own eyes.<br/>
             They shackle us to a system<br/>
             That fills its streets<br/>
             With a bloodbath that reeks of injustice.<br/>
