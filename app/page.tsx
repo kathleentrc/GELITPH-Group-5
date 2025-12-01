@@ -20,27 +20,27 @@ export default function Home() {
   const authors = [
     {
       name: "Gabriel Clarence Balboa",
-      role: "Poet & Writer",
+      role: "Researcher and Essayist",
       bio: ""
     },
     {
       name: "Vincent Thaddeus Catalan Castillo",
-      role: "Fiction Writer",
+      role: "Editor and Essayist",
       bio: ""
     },
     {
       name: "Shania Francine Tagudinay Cloma",
-      role: "Essayist & Web Developer",
+      role: "Essayist and Web Developer",
       bio: ""
     },
     {
       name: "Kathleen Therese Ramos Cruz",
-      role: "Poet & Web Developer",
+      role: "Poet and Web Developer",
       bio: ""
     },
     {
       name: "Christophe Mervyn Lacustales Rodriguez",
-      role: "Editor",
+      role: "Researcher and Essayist",
       bio: ""
     }
   ];
