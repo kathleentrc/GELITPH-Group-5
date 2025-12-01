@@ -36,9 +36,10 @@ const Cruz = () => {
             Promoting flyers, secretly handing out money<br/>
             With a large grin on their face<br/>
             That may seem friendly on the surface.<br/>
-            They tell me their surnames<br/>
-            That I recognize from a long line of trapos.<br/>
-            Each line, each narrative,<br/>
+            They tell me their names<br/>
+            That I recognize from a long line of <i>trapos.</i><br/>
+            Each line,<br/>
+            Each narrative,<br/>
             Felt rehearsed to fool me.<br/>
             <i>I can give you a promising future</i>, they said.<br/><br/>
 
